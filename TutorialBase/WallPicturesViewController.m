@@ -25,12 +25,6 @@
 {
     [super viewWillAppear:animated];
     [self getWallImages];
-
-    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
-    [self.wallScroll addSubview:refreshControl];
-    
- 
 }
 
 #pragma mark - Private methods
@@ -47,23 +41,6 @@
             [[[UIAlertView alloc] initWithTitle:@"Error" message:[error userInfo][@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }
     }];
-}
-
--(void)refreshView:(UIRefreshControl *)refresh
-{
-//    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"refreshing data.."];
-//    NSLog(@"Refreshing data");
-    
-//    [self loadWallViews];
-//    NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
-//    [formatter setDateFormat:@"MMM d, h:mm a"];
-//    
-//    NSString * lastUpdated = [NSString stringWithFormat:@"Last Updated on %@",
-//                              [formatter
-//                               stringFromDate:[NSDate date]]];
-//    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
-    [refresh endRefreshing];
-    
 }
 
 -(void)loadWallViews
