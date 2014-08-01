@@ -14,36 +14,56 @@
 @property (nonatomic, strong) IBOutlet UIScrollView *wallScroll;
 @property (nonatomic, retain) NSArray *wallObjectsArray;
 @property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+
 @end
 
 @implementation WallPicturesViewController
+
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self getWallImages];
+
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self.wallScroll addSubview:refreshControl];
     
+ 
 }
 
 #pragma mark - Private methods
 
 -(void)getWallImages
 {
-    // 1
     PFQuery *query = [PFQuery queryWithClassName:@"WallImageObject"];
-    
-    // 2
     [query orderByDescending:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        // 3
         if (!error) {
             self.wallObjectsArray = objects;
             [self loadWallViews];
         } else {
-            // 4
             [[[UIAlertView alloc] initWithTitle:@"Error" message:[error userInfo][@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }
     }];
+}
+
+-(void)refreshView:(UIRefreshControl *)refresh
+{
+//    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"refreshing data.."];
+//    NSLog(@"Refreshing data");
+    
+//    [self loadWallViews];
+//    NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
+//    [formatter setDateFormat:@"MMM d, h:mm a"];
+//    
+//    NSString * lastUpdated = [NSString stringWithFormat:@"Last Updated on %@",
+//                              [formatter
+//                               stringFromDate:[NSDate date]]];
+//    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
+    [refresh endRefreshing];
+    
 }
 
 -(void)loadWallViews
@@ -58,6 +78,7 @@
     [self.wallObjectsArray enumerateObjectsUsingBlock:^(PFObject *wallImageObject, NSUInteger idx, BOOL *stop) {
         // 1
         UIView *wallImageView = [[UIView alloc] initWithFrame:CGRectMake(10.0f, originY, self.view.frame.size.width - 20.0f, 300.0f)];
+        wallImageView.userInteractionEnabled = TRUE;
         
         // 2
         PFFile *image = (PFFile *)wallImageObject[@"image"];
@@ -91,10 +112,12 @@
         // 6
         [self.wallScroll addSubview:wallImageView];
         originY += (wallImageView.frame.size.height + 20);
+        
     }];
     
     // 7
     self.wallScroll.contentSize = CGSizeMake(self.wallScroll.frame.size.width, originY);
+    
 }
 
 -(IBAction)logoutPressed:(id)sender
@@ -108,5 +131,7 @@
     UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
     [errorAlertView show];
 }
+
+
 
 @end

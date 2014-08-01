@@ -10,8 +10,9 @@
 
 @interface WallPicturesViewController : UIViewController
 
-
-
 -(IBAction)logoutPressed:(id)sender;
+-(IBAction)refresh:(UIRefreshControl *)sender;
+
+
 
 @end
