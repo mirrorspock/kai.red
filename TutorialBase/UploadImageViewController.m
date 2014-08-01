@@ -7,6 +7,7 @@
 //
 
 #import "UploadImageViewController.h"
+#import <Parse/Parse.h>
 
 @interface UploadImageViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, strong) IBOutlet UIImageView *imgToUpload;

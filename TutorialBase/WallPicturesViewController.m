@@ -8,6 +8,7 @@
 
 #import "WallPicturesViewController.h"
 #import "UploadImageViewController.h"
+#import <Parse/Parse.h>
 
 @interface WallPicturesViewController ()
 @property (nonatomic, strong) IBOutlet UIScrollView *wallScroll;

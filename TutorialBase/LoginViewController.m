@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import <Parse/Parse.h>
 
 @interface LoginViewController ()
 @property (nonatomic, strong) IBOutlet UITextField *userTextField;
@@ -16,16 +17,31 @@
 
 @implementation LoginViewController
 
+
+- (void)viewDidLoad
+{
+    if ([PFUser currentUser]) {
+        [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
+    }
+
+
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
 
     }
+
+    
     return self;
 }
 
 #pragma mark - Private methods
+
 
 -(IBAction)logInPressed:(id)sender
 {

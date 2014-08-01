@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>476E4923-68A3-4572-A0FF-BAA3DFF2FEA4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TutorialBase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F851DF11-DFCD-4E5E-A7CF-CDB5AD798AEB</key>
+		<string>ssh://github.com/mirrorspock/kai.red.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TutorialBase.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F851DF11-DFCD-4E5E-A7CF-CDB5AD798AEB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mirrorspock/kai.red.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F851DF11-DFCD-4E5E-A7CF-CDB5AD798AEB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F851DF11-DFCD-4E5E-A7CF-CDB5AD798AEB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kai.red</string>
+		</dict>
+	</array>
+</dict>
+</plist>

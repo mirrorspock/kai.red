@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import <Parse/Parse.h>
 
 @interface RegisterViewController ()
 @property (nonatomic, strong) IBOutlet UITextField *userRegisterTextField;

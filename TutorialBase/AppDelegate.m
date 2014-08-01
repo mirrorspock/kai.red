@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
@@ -14,13 +15,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-#warning Set Parse app ID and client key
-    [Parse setApplicationId:@"___" clientKey:@"___"];
+    [Parse setApplicationId:@"i9CHI6ECFXZuiP92PUfVYIyTbYbX5Zyy9fU2NUp4" clientKey:@"aBtnG83BGYniODycMLf72HdIbmcvE3Xyd81qdKWI"];
+
     
-//    PFObject *player = [PFObject objectWithClassName:@"Player"];
-//    player[@"Name"] = @"John";
-//    player[@"Score"] = @1230;
-//    [player save];
+    if (![PFUser currentUser]) {
+        NSLog(@"not logged in");
+    } else {
+        NSLog(@"logged in");
+    }
+
+    
+//    PFObject *player = [PFObject objectWithClassName:@"Player"];//1
+//    [player setObject:@"John" forKey:@"Name"];
+//    [player setObject:@"Blue" forKey:@"Color"];
+//    [player setObject:[NSNumber numberWithInt:1230] forKey:@"Score"];//2
+//    [player save];//3
+    
     
 //    PFObject *anotherPlayer = [PFObject objectWithClassName:@"Player"];
 //    anotherPlayer[@"Name"] = @"Jack";

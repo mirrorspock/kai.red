@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38EFC7F7198B77CF007E4610 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC7F6198B77CF007E4610 /* Parse.framework */; };
 		B8811D9315B049AE00F6F58A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8811D9215B049AE00F6F58A /* UIKit.framework */; };
 		B8811D9515B049AE00F6F58A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8811D9415B049AE00F6F58A /* Foundation.framework */; };
 		B8811D9715B049AE00F6F58A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8811D9615B049AE00F6F58A /* CoreGraphics.framework */; };
@@ -19,7 +20,6 @@
 		B8811DFC15B0501100F6F58A /* WallPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8811DF915B0501100F6F58A /* WallPicturesViewController.m */; };
 		B8811DFD15B0501100F6F58A /* UploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8811DFB15B0501100F6F58A /* UploadImageViewController.m */; };
 		D27E92BA16692D0A00F838F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D27E92B916692D0A00F838F6 /* Default-568h@2x.png */; };
-		D27E92BD16692DFE00F838F6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27E92BC16692DFE00F838F6 /* Parse.framework */; };
 		D27E92C216692E6C00F838F6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27E92BE16692E6C00F838F6 /* Accounts.framework */; };
 		D27E92C316692E6C00F838F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27E92BF16692E6C00F838F6 /* AudioToolbox.framework */; };
 		D27E92C416692E6C00F838F6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27E92C016692E6C00F838F6 /* CFNetwork.framework */; };
@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38EFC7F6198B77CF007E4610 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B8811D8E15B049AE00F6F58A /* TutorialBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8811D9215B049AE00F6F58A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8811D9415B049AE00F6F58A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,7 +57,6 @@
 		B8811DFA15B0501100F6F58A /* UploadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageViewController.h; sourceTree = "<group>"; };
 		B8811DFB15B0501100F6F58A /* UploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageViewController.m; sourceTree = "<group>"; };
 		D27E92B916692D0A00F838F6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D27E92BC16692DFE00F838F6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D27E92BE16692E6C00F838F6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D27E92BF16692E6C00F838F6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D27E92C016692E6C00F838F6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -83,6 +83,7 @@
 				D27E92D416692EE500F838F6 /* Security.framework in Frameworks */,
 				D27E92D516692EE500F838F6 /* Social.framework in Frameworks */,
 				D27E92D616692EE500F838F6 /* StoreKit.framework in Frameworks */,
+				38EFC7F7198B77CF007E4610 /* Parse.framework in Frameworks */,
 				D27E92D716692EE500F838F6 /* SystemConfiguration.framework in Frameworks */,
 				D27E92CB16692E8F00F838F6 /* libz.1.1.3.dylib in Frameworks */,
 				D27E92C716692E7B00F838F6 /* libsqlite3.dylib in Frameworks */,
@@ -93,7 +94,6 @@
 				B8811D9715B049AE00F6F58A /* CoreGraphics.framework in Frameworks */,
 				B8811D9315B049AE00F6F58A /* UIKit.framework in Frameworks */,
 				B8811D9515B049AE00F6F58A /* Foundation.framework in Frameworks */,
-				D27E92BD16692DFE00F838F6 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +121,7 @@
 		B8811D9115B049AE00F6F58A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38EFC7F6198B77CF007E4610 /* Parse.framework */,
 				D27E92BE16692E6C00F838F6 /* Accounts.framework */,
 				D27E92D816692F2500F838F6 /* AdSupport.framework */,
 				D27E92BF16692E6C00F838F6 /* AudioToolbox.framework */,
@@ -131,7 +132,6 @@
 				D27E92C616692E7B00F838F6 /* libsqlite3.dylib */,
 				D27E92CA16692E8F00F838F6 /* libz.1.1.3.dylib */,
 				D27E92CC16692EE500F838F6 /* MobileCoreServices.framework */,
-				D27E92BC16692DFE00F838F6 /* Parse.framework */,
 				D27E92CD16692EE500F838F6 /* QuartzCore.framework */,
 				D27E92CE16692EE500F838F6 /* Security.framework */,
 				D27E92CF16692EE500F838F6 /* Social.framework */,
@@ -340,7 +340,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TutorialBase/TutorialBase-Prefix.pch";
@@ -356,7 +357,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TutorialBase/TutorialBase-Prefix.pch";
