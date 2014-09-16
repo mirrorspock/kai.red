@@ -94,7 +94,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JdV-XU-SF7">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.1964285714" green="0.1964285714" blue="0.1964285714" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.80392158030000005" green="0.0" blue="0.050980392839999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.1964285714" green="0.1964285714" blue="0.1964285714" alpha="1" colorSpace="calibratedRGB"/>

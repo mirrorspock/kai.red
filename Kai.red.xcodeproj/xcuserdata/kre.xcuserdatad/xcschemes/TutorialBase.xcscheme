@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B8811D8D15B049AD00F6F58A"
-               BuildableName = "TutorialBase.app"
-               BlueprintName = "TutorialBase"
-               ReferencedContainer = "container:TutorialBase.xcodeproj">
+               BuildableName = "Kai.red.app"
+               BlueprintName = "Kai.red"
+               ReferencedContainer = "container:Kai.red.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8811D8D15B049AD00F6F58A"
-            BuildableName = "TutorialBase.app"
-            BlueprintName = "TutorialBase"
-            ReferencedContainer = "container:TutorialBase.xcodeproj">
+            BuildableName = "Kai.red.app"
+            BlueprintName = "Kai.red"
+            ReferencedContainer = "container:Kai.red.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8811D8D15B049AD00F6F58A"
-            BuildableName = "TutorialBase.app"
-            BlueprintName = "TutorialBase"
-            ReferencedContainer = "container:TutorialBase.xcodeproj">
+            BuildableName = "Kai.red.app"
+            BlueprintName = "Kai.red"
+            ReferencedContainer = "container:Kai.red.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8811D8D15B049AD00F6F58A"
-            BuildableName = "TutorialBase.app"
-            BlueprintName = "TutorialBase"
-            ReferencedContainer = "container:TutorialBase.xcodeproj">
+            BuildableName = "Kai.red.app"
+            BlueprintName = "Kai.red"
+            ReferencedContainer = "container:Kai.red.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
